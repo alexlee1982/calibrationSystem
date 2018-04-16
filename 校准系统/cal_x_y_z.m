@@ -2,12 +2,12 @@ function [ p ] = cal_x_y_z( l1_org,l2_org,l3_org )
 %UNTITLED 此处显示有关此函数的摘要
 %   此处显示详细说明
 
-
+p=[0;0;0];
 l1 = l1_org;
 l2 = l2_org;
 l3 = l3_org;
 
-for i = 1:1:5
+for i = 1:1:10
     
     x_ = cal_p_x(l1,l2,l3);
     y_ = cal_p_y(l1,l2,l3);
@@ -31,8 +31,8 @@ for i = 1:1:5
     l2 = A2C_ - l2_ + l2_org;
     l3 = A3C_ - l3_ + l3_org;
 end
-p(1,1) = x_ 
-p(2,1) = y_
-p(3,1) = z_
+p(1,1) = x_ ;
+p(2,1) = y_;
+p(3,1) = z_;
 end
 
